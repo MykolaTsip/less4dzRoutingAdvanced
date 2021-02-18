@@ -1,0 +1,11 @@
+
+<h2>CURRENT USER</h2>
+
+{{user | json}}
+
+<hr>
+
+<h2>POSTS OF USER</h2>
+
+<app-post *ngFor="let p of posts" [post]="p"></app-post>
+

@@ -1,0 +1,14 @@
+<hr>
+<h2>
+  CURRENT POST
+</h2>
+
+{{post | json}}
+
+<hr>
+
+    <h2>
+      cOMMENT TO POSTS
+    </h2>
+
+<app-comment *ngFor="let c of comments" [comment]="c"></app-comment>
